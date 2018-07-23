@@ -1,0 +1,26 @@
+.code {
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  background-color:khaki;
+}
+
+.second {
+  color : orange;
+}
+
+.program {
+  font-weight:bold;
+}
+
+.mark {
+  color:blue;
+}
+
+.mark2 {
+  color:green;
+}
+
+.env {
+  color : blue;
+}

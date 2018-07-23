@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+                      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <link rel="stylesheet" type = "text/css" href = "css/second.css"/>
+        <script type ="text/javascript" src = "js/basics.js"/>
+    </head>
+    <body>
+      <p class = "code" id = "main">java -cp /c/jar/Saxon-HE-9.7.0-4.jar net.sf.saxon.Query -s:pom.xml -qs:"declare option saxon:output 'method=text';<span class="mark" id = "second">/*:project/*:groupId</span>,'&#10;'"</p>
+      <p>marked string to be replaced by</p>
+      <p class = "code" id = "modulation">(/*)[1]//*:plugin[*:artifactId="maven-assembly-plugin"]//*:configuration//*:descriptor/text()</p>
+      <h3>écueils</h3>
+      <p class = "second">les parenthèses obligatoires sont un écueil</p>
+      <p class = "second">quand j'utilise un formulaire</p>
+      <h3>combo</h3>      
+      <p><button onclick="combo()">combo</button></p>
+      <p class = "code">java -cp /c/jar/Saxon-HE-9.7.0-4.jar net.sf.saxon.Query -s:pom.xml -qs:"declare option saxon:output 'method=text';/*:project/*:groupId,'&#10;'"</p>
+      <input id = "input">ceci est à copier</input>
+      
+    </body>
+</html>
