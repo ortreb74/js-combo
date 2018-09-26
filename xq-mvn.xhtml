@@ -11,6 +11,13 @@
       <p class = "code" id = "main">java -cp /c/jar/Saxon-HE-9.7.0-4.jar net.sf.saxon.Query -s:pom.xml -qs:"declare option saxon:output 'method=text';<span class="mark" id = "second">/*:project/*:groupId</span>,'&#10;'"</p>
       <p>marked string to be replaced by</p>
       <p class = "code" id = "modulation">(/*)[1]//*:plugin[*:artifactId="maven-assembly-plugin"]//*:configuration//*:descriptor/text()</p>
+      
+      <div id ="query">
+        <div><input type="radio" name="query" value="*:project/*:groupId"/>namespace</div>
+        <div><input type="radio" name="query" value="/*:project/*:version"/>version</div>
+        <div><input type="radio" name="query" value="//*:defaultGoal"/>default goal</div>
+      </div>
+      
       <h3>écueils</h3>
       <p class = "second">les parenthèses obligatoires sont un écueil</p>
       <p class = "second">quand j'utilise un formulaire</p>
